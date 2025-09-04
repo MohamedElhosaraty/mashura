@@ -56,9 +56,21 @@ class AppTextStyles {
     fontStyle: FontStyle.normal,
     context: context,
   );
+  static TextStyle font18Regular(BuildContext context) => baseStyle(
+    fontWeight: AppFontWeights.fontWeightRegular,
+    fontSize: AppTextSizes.fontSize18,
+    fontStyle: FontStyle.normal,
+    context: context,
+  );
   static TextStyle font10Regular(BuildContext context) => baseStyle(
     fontWeight: AppFontWeights.fontWeightRegular,
     fontSize: AppTextSizes.fontSize10,
+    fontStyle: FontStyle.normal,
+    context: context,
+  );
+  static TextStyle font12Regular(BuildContext context) => baseStyle(
+    fontWeight: AppFontWeights.fontWeightRegular,
+    fontSize: AppTextSizes.fontSize12,
     fontStyle: FontStyle.normal,
     context: context,
   );

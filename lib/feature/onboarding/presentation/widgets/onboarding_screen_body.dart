@@ -27,7 +27,10 @@ class OnboardingScreenBody extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return Column(
                     children: [
-                      Image.asset(onboardingList[index].image),
+                      Image.asset(onboardingList[index].image,
+                      width: double.infinity,
+                        fit: BoxFit.cover,
+                      ),
                       32.verticalSpace,
                       Text(
                         onboardingList[index].title,
@@ -79,7 +82,9 @@ class OnboardingScreenBody extends StatelessWidget {
                       51.verticalSpace,
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 18.0),
-                        child: Row(
+                        child: cubit.currentIndex <
+                  onboardingList.length - 1 ?
+                        Row(
                           children: [
                             CustomButton(
                               width: 190.w,
@@ -92,7 +97,7 @@ class OnboardingScreenBody extends StatelessWidget {
                                   cubit.nextPage();
                                 } else {
                                   context.pushReplacementNamed(
-                                    Routes.loginScreen,
+                                    Routes.lawyerLoginScreen,
                                   );
                                 }
                               },
@@ -119,7 +124,9 @@ class OnboardingScreenBody extends StatelessWidget {
                               width: 125.w,
                               bgColor: AppColors.moreWhite,
                               onPressed: () {
-
+                                context.pushReplacementNamed(
+                                  Routes.lawyerLoginScreen,
+                                );
                               },
                               child: Text(
                                 'تخطى',
@@ -130,6 +137,22 @@ class OnboardingScreenBody extends StatelessWidget {
                             ),
 
                           ],
+                        ) :
+                        CustomButton(
+                          bgColor: AppColors.primaryColor,
+                          yPadding: 18.h,
+                          borderRadius: 13.r,
+                          onPressed: () {
+                            context.pushReplacementNamed(
+                              Routes.lawyerLoginScreen,
+                            );
+                          },
+                          child: Text(
+                            ' ابدأ الآن',
+                            style: AppTextStyles.font20Regular(context).copyWith(
+                              color: AppColors.background,
+                            ),
+                          ),
                         ),
                       ),
                     ],

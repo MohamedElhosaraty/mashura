@@ -2,12 +2,11 @@ class Routes {
   static const String splashScreen = '/splashScreen';
   static const String changeLanguage = '/changeLanguage';
   static const String onBoardingScreen = '/onBoardingScreen';
+  static const String lawyerLoginScreen = '/lawyerLoginScreen';
+  static const String userLoginScreen = '/userLoginScreen';
 
 
 
-
-
-  static const String loginScreen = '/loginScreen';
   static const String signUpScreen = '/signUpScreen';
   static const String homeScreen = '/homeScreen';
   static const String doctorSpecialityScreen = '/doctorSpecialityScreen';
