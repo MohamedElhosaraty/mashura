@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mashura/core/routing/routes.dart';
 import 'package:mashura/feature/auth/login/presentation/page/lawyer_login_screen.dart';
 import 'package:mashura/feature/auth/login/presentation/page/user_login_screen.dart';
+import 'package:mashura/feature/auth/sign_up/presentation/page/user_sign_up_screen.dart';
 import 'package:mashura/feature/splash/splash_screen.dart';
 
 import '../../feature/change_language/change_language_screen.dart';
@@ -23,6 +24,9 @@ class AppRouter {
 
       case Routes.userLoginScreen:
         return MaterialPageRoute(builder: (_) => const UserLoginScreen());
+
+      case Routes.userSignUpScreen:
+        return MaterialPageRoute(builder: (_) => const UserSignUpScreen());
     }
     return null;
   }

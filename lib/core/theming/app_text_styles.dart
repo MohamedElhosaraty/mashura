@@ -37,6 +37,12 @@ class AppTextStyles {
     fontStyle: FontStyle.normal,
     context: context,
   );
+  static TextStyle font22SemiBold(BuildContext context) => baseStyle(
+    fontWeight: AppFontWeights.fontWeightSemiBold,
+    fontSize: AppTextSizes.fontSize22,
+    fontStyle: FontStyle.normal,
+    context: context,
+  );
   static TextStyle font16Regular(BuildContext context) => baseStyle(
     fontWeight: AppFontWeights.fontWeightRegular,
     fontSize: AppTextSizes.fontSize16,

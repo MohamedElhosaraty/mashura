@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mashura/core/helpers/extensions.dart';
+import '../../../../core/localization/localization_methods.dart';
 import '../../../../core/routing/routes.dart';
 import '../../../../core/theming/app_colors.dart';
 import '../../../../core/theming/app_text_styles.dart';
 import '../../../../core/utils/onboarding_list.dart';
 import '../../../../core/widgets/custom_button.dart';
+import '../../../../generated/language_key.dart';
 import '../cubit/onboarding_cubit.dart';
 
 class OnboardingScreenBody extends StatelessWidget {
@@ -33,7 +35,7 @@ class OnboardingScreenBody extends StatelessWidget {
                       ),
                       32.verticalSpace,
                       Text(
-                        onboardingList[index].title,
+                        tr(context, onboardingList[index].titleKey),
                         textAlign: TextAlign.center,
                         style: AppTextStyles.font22Regular(
                           context,
@@ -49,7 +51,7 @@ class OnboardingScreenBody extends StatelessWidget {
                           width: double.infinity,
                           alignment: Alignment.center,
                           child: Text(
-                            onboardingList[index].description,
+                            tr(context, onboardingList[index].descriptionKey),
                             textAlign: TextAlign.center,
                             style: AppTextStyles.font14Regular(
                               context,
@@ -87,6 +89,24 @@ class OnboardingScreenBody extends StatelessWidget {
                         Row(
                           children: [
                             CustomButton(
+                              borderRadius: 13.r,
+                              yPadding: 18.h,
+                              width: 125.w,
+                              bgColor: AppColors.moreWhite,
+                              onPressed: () {
+                                context.pushReplacementNamed(
+                                  Routes.lawyerLoginScreen,
+                                );
+                              },
+                              child: Text(
+                                tr(context, LanguageKey.skip),
+                                style: AppTextStyles.font16Regular(context).copyWith(
+                                  color: AppColors.primaryColor,
+                                ),
+                              ),
+                            ),
+                            20.horizontalSpace,
+                            CustomButton(
                               width: 190.w,
                               yPadding: 18.h,
                               bgColor: AppColors.coffee2,
@@ -104,37 +124,21 @@ class OnboardingScreenBody extends StatelessWidget {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Icon(
-                                    Icons.arrow_back_outlined,
-                                  color: AppColors.primaryColor,),
-                                  10.horizontalSpace,
                                   Text(
-                                    'التالى',
+                                    tr(context, LanguageKey.next),
                                     style: AppTextStyles.font20Regular(context).copyWith(
                                       color: AppColors.primaryColor,
                                     ),
                                   ),
+                                  10.horizontalSpace,
+                                  Icon(
+                                    Icons.arrow_forward,
+                                  color: AppColors.primaryColor,
+                                  size: 20,),
                                 ],
                               ),
                             ),
-                            20.horizontalSpace,
-                            CustomButton(
-                              borderRadius: 13.r,
-                              yPadding: 18.h,
-                              width: 125.w,
-                              bgColor: AppColors.moreWhite,
-                              onPressed: () {
-                                context.pushReplacementNamed(
-                                  Routes.lawyerLoginScreen,
-                                );
-                              },
-                              child: Text(
-                                'تخطى',
-                                style: AppTextStyles.font16Regular(context).copyWith(
-                                  color: AppColors.primaryColor,
-                                ),
-                              ),
-                            ),
+
 
                           ],
                         ) :
@@ -148,7 +152,7 @@ class OnboardingScreenBody extends StatelessWidget {
                             );
                           },
                           child: Text(
-                            ' ابدأ الآن',
+                            tr(context, LanguageKey.startNow),
                             style: AppTextStyles.font20Regular(context).copyWith(
                               color: AppColors.background,
                             ),

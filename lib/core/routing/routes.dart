@@ -4,10 +4,11 @@ class Routes {
   static const String onBoardingScreen = '/onBoardingScreen';
   static const String lawyerLoginScreen = '/lawyerLoginScreen';
   static const String userLoginScreen = '/userLoginScreen';
+  static const String userSignUpScreen = '/userSignUpScreen';
 
 
 
-  static const String signUpScreen = '/signUpScreen';
+
   static const String homeScreen = '/homeScreen';
   static const String doctorSpecialityScreen = '/doctorSpecialityScreen';
   static const String recommendationDoctorScreen = '/recommendationDoctorScreen';
