@@ -34,11 +34,11 @@ class CustomTextField extends StatelessWidget {
       controller: textController,
       style: style,
       decoration: InputDecoration(
-        fillColor: AppColors.background,
+        fillColor: AppColors.moreWhite,
         filled: true,
         hintText: labelText,
-        hintStyle: AppTextStyles.font22Regular(context).copyWith(color: AppColors.lightGrey),
-        errorStyle: AppTextStyles.font22Regular(context).copyWith(color: AppColors.lightGrey),
+        hintStyle: AppTextStyles.font14Regular(context).copyWith(color: AppColors.lightGrey),
+        errorStyle: AppTextStyles.font14Regular(context).copyWith(color: AppColors.lightGrey),
         prefixIcon: prefixIcon,
         prefixIconColor: AppColors.primaryColor,
         suffixIcon: suffixIcon,
@@ -47,11 +47,11 @@ class CustomTextField extends StatelessWidget {
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.r)),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20.r),
-          borderSide:  BorderSide(color: AppColors.lightGrey),
+          borderSide:  BorderSide(color: AppColors.moreWhite),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20.r),
-          borderSide:  BorderSide(color:AppColors.lightGrey),
+          borderSide:  BorderSide(color:AppColors.moreWhite),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20.r),
