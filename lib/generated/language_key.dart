@@ -20,5 +20,30 @@ class LanguageKey {
   static const String chooseCity = "chooseCity";
   static const String alreadyHaveAccount = "alreadyHaveAccount";
   static const String log = "log";
+  static const String step = "step";
+  static const String from = "from";
+  static const String attachTheId = "attachTheId";
+  static const String dateOfBirth = "dateOfBirth";
+  static const String enterDateOfBirth = "enterDateOfBirth";
+  static const String theSpecialty = "theSpecialty";
+  static const String enterCity = "enterCity";
+  static const String theType = "theType";
+  static const String female = "female";
+  static const String male = "male";
+  static const String complete = "complete";
+  static const String completeData = "completeData";
+  static const String yearsOfExperience = "yearsOfExperience";
+  static const String enterYearsOfExperience = "enterYearsOfExperience";
+  static const String introduction = "introduction";
+  static const String enterIntroduction = "enterIntroduction";
+  static const String proofOfProfessionalPractice = "proofOfProfessionalPractice";
+  static const String attachProofOfProfessionalPractice = "attachProofOfProfessionalPractice";
+  static const String attachCertificates = "attachCertificates";
+  static const String qualifications = "qualifications";
+  static const String signUp = "signUp";
+  static const String addExperiences = "addExperiences";
+  static const String uploadImage = "uploadImage";
+  static const String addImageLessThan2MB = "addImageLessThan2MB";
+
 
 }

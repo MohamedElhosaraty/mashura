@@ -80,5 +80,11 @@ class AppTextStyles {
     fontStyle: FontStyle.normal,
     context: context,
   );
+  static TextStyle font14Bold(BuildContext context) => baseStyle(
+    fontWeight: AppFontWeights.fontWeightBold,
+    fontSize: AppTextSizes.fontSize14,
+    fontStyle: FontStyle.normal,
+    context: context,
+  );
 
 }

@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:mashura/core/routing/routes.dart';
 import 'package:mashura/feature/auth/login/presentation/page/lawyer_login_screen.dart';
 import 'package:mashura/feature/auth/login/presentation/page/user_login_screen.dart';
+import 'package:mashura/feature/auth/sign_up/presentation/page/lawyer_sign_ups_screen_one.dart';
 import 'package:mashura/feature/auth/sign_up/presentation/page/user_sign_up_screen.dart';
 import 'package:mashura/feature/splash/splash_screen.dart';
 
+import '../../feature/auth/sign_up/presentation/page/lawyer_sign_up_screen_two.dart';
 import '../../feature/change_language/change_language_screen.dart';
 import '../../feature/onboarding/presentation/pages/onboarding_screen.dart';
 
@@ -27,6 +29,12 @@ class AppRouter {
 
       case Routes.userSignUpScreen:
         return MaterialPageRoute(builder: (_) => const UserSignUpScreen());
+
+      case Routes.lawyerSignUpScreenOne:
+        return MaterialPageRoute(builder: (_) => const LawyerSignUpsScreenOne());
+
+        case Routes.lawyerSignUpScreenTwo:
+        return MaterialPageRoute(builder: (_) => const LawyerSignUpScreenTwo());
     }
     return null;
   }

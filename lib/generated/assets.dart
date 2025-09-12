@@ -3,6 +3,7 @@ class Assets {
   Assets._();
 
   static const String fontsMadaniArabicSemiBold400 = 'assets/fonts/Madani-Arabic-SemiBold-400.ttf';
+  static const String imagesAddImage = 'assets/images/add_image.png';
   static const String imagesGroup = 'assets/images/Group.png';
   static const String imagesLogo = 'assets/images/logo.png';
   static const String imagesOnboarding = 'assets/images/onboarding.png';

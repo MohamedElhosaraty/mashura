@@ -79,11 +79,16 @@ class LawyerLoginScreen extends StatelessWidget {
                       context,
                     ).copyWith(color: AppColors.darkBlue),
                   ),
-                  Text(
+                  TextButton(
+                    onPressed: () {
+                      context.pushReplacementNamed(Routes.lawyerSignUpScreenOne);
+                    },
+                    child: Text(
                     tr(context, LanguageKey.registerNow),
                     style: AppTextStyles.font14Regular(
                       context,
                     ).copyWith(color: AppColors.coffee),
+                  ),
                   ),
                 ],
               ),

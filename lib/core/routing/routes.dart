@@ -5,6 +5,8 @@ class Routes {
   static const String lawyerLoginScreen = '/lawyerLoginScreen';
   static const String userLoginScreen = '/userLoginScreen';
   static const String userSignUpScreen = '/userSignUpScreen';
+  static const String lawyerSignUpScreenOne = '/lawyerSignUpScreenOne';
+  static const String lawyerSignUpScreenTwo = '/lawyerSignUpScreenTwo';
 
 
 

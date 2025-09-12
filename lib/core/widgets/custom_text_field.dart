@@ -11,6 +11,7 @@ class CustomTextField extends StatelessWidget {
     this.labelText,
     this.style,
     this.validator,
+    this.maxLines,
     this.isObscure,
     this.keyboardType,
     this.suffixIcon,
@@ -21,6 +22,7 @@ class CustomTextField extends StatelessWidget {
   final String? labelText;
   final TextStyle? style;
   final bool? isObscure;
+  final int? maxLines;
   final Widget? suffixIcon;
   final Widget? prefixIcon;
   final TextInputType? keyboardType;
@@ -30,6 +32,7 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       keyboardType: keyboardType,
+      maxLines: maxLines,
       obscureText: isObscure ?? false,
       controller: textController,
       style: style,
