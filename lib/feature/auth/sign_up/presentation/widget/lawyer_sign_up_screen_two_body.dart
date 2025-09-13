@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mashura/core/helpers/extensions.dart';
 
 import '../../../../../core/localization/localization_methods.dart';
+import '../../../../../core/routing/routes.dart';
 import '../../../../../core/theming/app_colors.dart';
 import '../../../../../core/theming/app_text_styles.dart';
 import '../../../../../core/widgets/custom_button.dart';
@@ -137,7 +139,9 @@ class LawyerSignUpScreenTwoBody extends StatelessWidget {
               yPadding: 14.h,
               borderRadius: 13.r,
               text: tr(context, LanguageKey.signUp),
-              onPressed: (){},
+              onPressed: (){
+                context.pushReplacementNamed(Routes.otpScreen);
+              },
             ),
             30.verticalSpace,
 

@@ -43,6 +43,10 @@
   "signUp": "Sign Up",
   "addExperiences": "Add Experiences",
   "uploadImage": "Upload Image",
-  "addImageLessThan2MB": "Add image less than 2 MB"
+  "addImageLessThan2MB": "Add image less than 2 MB",
+  "verificationCode": "Verification Code",
+  "enterTheVerificationCodeSentToYourPhoneNumber": "Enter the verification code sent to your phone number.",
+  "resendTheCode": "Resend the code",
+  "confirm": "Confirm"
 
 }

@@ -6,6 +6,7 @@ import 'package:mashura/feature/auth/sign_up/presentation/page/lawyer_sign_ups_s
 import 'package:mashura/feature/auth/sign_up/presentation/page/user_sign_up_screen.dart';
 import 'package:mashura/feature/splash/splash_screen.dart';
 
+import '../../feature/auth/otp/presentation/page/otp_screen.dart';
 import '../../feature/auth/sign_up/presentation/page/lawyer_sign_up_screen_two.dart';
 import '../../feature/change_language/change_language_screen.dart';
 import '../../feature/onboarding/presentation/pages/onboarding_screen.dart';
@@ -35,6 +36,9 @@ class AppRouter {
 
         case Routes.lawyerSignUpScreenTwo:
         return MaterialPageRoute(builder: (_) => const LawyerSignUpScreenTwo());
+
+        case Routes.otpScreen:
+        return MaterialPageRoute(builder: (_) => const OtpScreen());
     }
     return null;
   }

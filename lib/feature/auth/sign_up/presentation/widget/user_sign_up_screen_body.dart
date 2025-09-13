@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mashura/core/helpers/extensions.dart';
 import 'package:mashura/core/widgets/custom_phone_number_field.dart';
 import 'package:mashura/core/widgets/custom_text_field.dart';
 
 import '../../../../../core/localization/localization_methods.dart';
+import '../../../../../core/routing/routes.dart';
 import '../../../../../core/theming/app_colors.dart';
 import '../../../../../core/theming/app_text_styles.dart';
 import '../../../../../core/widgets/custom_button.dart';
@@ -91,7 +93,10 @@ class _UserSignUpScreenBodyState extends State<UserSignUpScreenBody> {
               bgColor: AppColors.primaryColor,
               yPadding: 18.h,
               borderRadius: 13.r,
-              onPressed: () {},
+              onPressed: () {
+                context.pushReplacementNamed(Routes.otpScreen);
+
+              },
               child: Text(
                 tr(context, LanguageKey.login),
                 style: AppTextStyles.font18Regular(

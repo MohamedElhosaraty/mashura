@@ -44,6 +44,10 @@ class LanguageKey {
   static const String addExperiences = "addExperiences";
   static const String uploadImage = "uploadImage";
   static const String addImageLessThan2MB = "addImageLessThan2MB";
+  static const String verificationCode = "verificationCode";
+  static const String enterTheVerificationCodeSentToYourPhoneNumber = "enterTheVerificationCodeSentToYourPhoneNumber";
+  static const String resendTheCode = "resendTheCode";
+  static const String confirm = "confirm";
 
 
 }

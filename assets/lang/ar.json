@@ -44,5 +44,9 @@
   "signUp": "تسجيل",
   "addExperiences": "أضف الخبرات",
   "uploadImage": "تحميل صورة",
-  "addImageLessThan2MB": "أضف صورة اقل من 2 ميغابايت"
+  "addImageLessThan2MB": "أضف صورة اقل من 2 ميغابايت",
+  "verificationCode": "رمز التحقق",
+  "enterTheVerificationCodeSentToYourPhoneNumber": "أدخل رمز التحقق المرسل إلى رقم هاتفك ",
+  "resendTheCode": "إعادة ارسال الرمز ",
+  "confirm": "تأكيد"
 }
