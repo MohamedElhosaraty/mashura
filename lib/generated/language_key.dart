@@ -41,6 +41,7 @@ class LanguageKey {
   static const String attachCertificates = "attachCertificates";
   static const String qualifications = "qualifications";
   static const String signUp = "signUp";
+  static const String experiences = "experiences";
   static const String addExperiences = "addExperiences";
   static const String uploadImage = "uploadImage";
   static const String addImageLessThan2MB = "addImageLessThan2MB";
@@ -48,6 +49,13 @@ class LanguageKey {
   static const String enterTheVerificationCodeSentToYourPhoneNumber = "enterTheVerificationCodeSentToYourPhoneNumber";
   static const String resendTheCode = "resendTheCode";
   static const String confirm = "confirm";
+  static const String maxExperiences = "maxExperiences";
+  static const String writeAboutYourExperience = "writeAboutYourExperience";
+  static const String exampleHereForExperience = "exampleHereForExperience";
+  static const String add = "add";
+  static const String save = "save";
+  static const String cancel = "cancel";
+  static const String character = "character";
 
 
 }

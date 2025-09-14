@@ -75,6 +75,7 @@ class LawyerSignUpScreenOneBody extends StatelessWidget {
                 title: tr(context, LanguageKey.attachTheId)),
             10.verticalSpace,
             UploadButton(
+              onTap: (){},
               title: tr(context, LanguageKey.attachTheId),
             ),
             25.verticalSpace,

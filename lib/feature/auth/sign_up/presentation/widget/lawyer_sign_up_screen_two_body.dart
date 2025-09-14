@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mashura/core/helpers/extensions.dart';
+import 'package:mashura/feature/auth/sign_up/presentation/widget/sort_bottom_sheet.dart';
 
 import '../../../../../core/localization/localization_methods.dart';
 import '../../../../../core/routing/routes.dart';
@@ -105,6 +106,7 @@ class LawyerSignUpScreenTwoBody extends StatelessWidget {
                 title: tr(context, LanguageKey.proofOfProfessionalPractice)),
             10.verticalSpace,
             UploadButton(
+              onTap: () {},
               title: tr(context, LanguageKey.attachProofOfProfessionalPractice),
             ),
             25.verticalSpace,
@@ -112,13 +114,35 @@ class LawyerSignUpScreenTwoBody extends StatelessWidget {
                 title: tr(context, LanguageKey.attachCertificates)),
             10.verticalSpace,
             UploadButton(
+              onTap: () {},
               title: tr(context, LanguageKey.attachCertificates),
             ),
             25.verticalSpace,
             CustomText(
-                title: tr(context, LanguageKey.attachCertificates)),
+                title: tr(context, LanguageKey.experiences)),
             10.verticalSpace,
             UploadButton(
+              onTap: () {
+                showModalBottomSheet(
+                  context: context,
+                  isScrollControlled: true,
+                  shape: RoundedRectangleBorder(
+
+                    borderRadius: BorderRadius.vertical(
+                        top: Radius.circular(30)),
+                  ),
+                  builder: (_) =>
+                      DraggableScrollableSheet(
+                          expand: false,
+                          initialChildSize: 0.5,
+                          minChildSize: 0.2,
+                          maxChildSize: 1,
+                          builder: (context, scrollController){
+                            return SortBottomSheet();
+                          }
+                      ),
+                );
+              },
               icon: Icon(
                 Icons.add,
                 color: AppColors.coffee,

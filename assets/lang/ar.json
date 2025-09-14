@@ -42,11 +42,19 @@
   "attachCertificates": "ارفاق شهادات",
   "qualifications": "المؤهلات",
   "signUp": "تسجيل",
+  "experiences": "الخبرات",
   "addExperiences": "أضف الخبرات",
   "uploadImage": "تحميل صورة",
   "addImageLessThan2MB": "أضف صورة اقل من 2 ميغابايت",
   "verificationCode": "رمز التحقق",
   "enterTheVerificationCodeSentToYourPhoneNumber": "أدخل رمز التحقق المرسل إلى رقم هاتفك ",
   "resendTheCode": "إعادة ارسال الرمز ",
-  "confirm": "تأكيد"
+  "confirm": "تأكيد",
+  "maxExperiences": "حد اقصي 5 خبرات",
+  "writeAboutYourExperience": "اكتب جملة صغيرة عن خبرتك",
+  "exampleHereForExperience": "مثال هنا للخبرة",
+  "add": "أضف",
+  "save": "حفظ",
+  "cancel": "تراجع",
+  "character": " حرف"
 }

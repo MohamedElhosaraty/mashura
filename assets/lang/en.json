@@ -40,13 +40,22 @@
   "proofOfProfessionalPractice": "Proof of Professional Practice",
   "attachProofOfProfessionalPractice": "Attach Proof of Professional Practice",
   "qualifications": "Qualifications",
+  "attachCertificates": "Attach Certificates",
   "signUp": "Sign Up",
+  "experiences": "Experiences",
   "addExperiences": "Add Experiences",
   "uploadImage": "Upload Image",
   "addImageLessThan2MB": "Add image less than 2 MB",
   "verificationCode": "Verification Code",
   "enterTheVerificationCodeSentToYourPhoneNumber": "Enter the verification code sent to your phone number.",
   "resendTheCode": "Resend the code",
-  "confirm": "Confirm"
+  "confirm": "Confirm",
+  "maxExperiences": "Max 5 Experiences",
+  "writeAboutYourExperience": "Write about your experience",
+  "exampleHereForExperience": "Example here for experience",
+  "add": "Add",
+  "save": "Save",
+  "cancel": "Cancel",
+  "character": "Character"
 
 }
