@@ -36,19 +36,19 @@ class SearchField extends StatelessWidget {
         filled: true,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14.0),
-          borderSide:  BorderSide(color: AppColors.moreLighterGrey),
+          borderSide:  BorderSide(color: AppColors.grey600),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14.0),
-          borderSide:  BorderSide(color: AppColors.moreLighterGrey),
+          borderSide:  BorderSide(color: AppColors.grey600),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14.0),
-          borderSide:  BorderSide(color: AppColors.moreLighterGrey),
+          borderSide:  BorderSide(color: AppColors.grey600),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14.0),
-          borderSide:  BorderSide(color: AppColors.moreLighterGrey),
+          borderSide:  BorderSide(color: AppColors.grey600),
         ),
         contentPadding:
             const EdgeInsets.symmetric(horizontal: 16, vertical: 12),

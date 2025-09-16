@@ -95,7 +95,7 @@ class OnboardingScreenBody extends StatelessWidget {
                               bgColor: AppColors.moreWhite,
                               onPressed: () {
                                 context.pushReplacementNamed(
-                                  Routes.lawyerLoginScreen,
+                                  Routes.loginScreen,
                                 );
                               },
                               child: Text(
@@ -117,7 +117,7 @@ class OnboardingScreenBody extends StatelessWidget {
                                   cubit.nextPage();
                                 } else {
                                   context.pushReplacementNamed(
-                                    Routes.lawyerLoginScreen,
+                                    Routes.loginScreen,
                                   );
                                 }
                               },
@@ -148,7 +148,7 @@ class OnboardingScreenBody extends StatelessWidget {
                           borderRadius: 13.r,
                           onPressed: () {
                             context.pushReplacementNamed(
-                              Routes.lawyerLoginScreen,
+                              Routes.loginScreen,
                             );
                           },
                           child: Text(

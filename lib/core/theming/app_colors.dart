@@ -17,31 +17,15 @@ class AppColors {
   static const Color grey600 = Color(0xFF40403E);
   static const Color lightGrey = Color(0xFF969696);
   static const Color dark = Color(0xFF212121);
-  static const Color moreBlack = Color(0xFF1A1A1A);
+  static const Color lightBlack = Color(0xFF1A1A1A);
   static const Color green = Color(0xFF0B3631);
   static const Color darkGrey = Color(0xFF808080);
+  static const Color moreBlack = Color(0xFF0C0C0C);
 
 
   static const Color grey300 = Color(0xFFE0E0E0);
-  static const Color moreGrey = Color(0xFF6F6F6F);
-  static const Color lightBlue = Color(0xFFF4F8FF);
-  static const Color lighterGrey = Color(0xFFEDEDED);
-  static const Color moreLightGrey = Color(0xFFFDFDFF);
-  static const Color moreLighterGrey = Color(0xFFF5F5F5);
-  static const Color light = Color(0xFFF2F4F7);
-  static const Color fillGreen = Color(0xFF22C55E);
-  static const Color moreLightBlue = Color(0xFFEAF2FF);
-  static const Color red = Color(0xFFFF4C5E);
-  static const Color moreLight = Color(0xFFF8F8F8);
-  static const Color lightBlock = Color(0xFF112211);
+   static const Color red = Color(0xFFFF4C5E);
 
-
-  static const Color lightBlue700 = Color(0xFFB2CCFF);
-  static const Color navy = Color(0xFF51526C);
-  static const Color rect = Color (0xFFB2CCFF);
-  static const Color grayScale = Color (0xFF67687E);
-  static const Color placeHolder = Color (0xFF929BAB);
-  static const Color lightBlue900 = Color (0xFFD9E6FF);
 
   static const Color transparent = Colors.transparent;
 

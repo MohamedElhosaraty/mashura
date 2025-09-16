@@ -2,12 +2,12 @@ class Routes {
   static const String splashScreen = '/splashScreen';
   static const String changeLanguage = '/changeLanguage';
   static const String onBoardingScreen = '/onBoardingScreen';
-  static const String lawyerLoginScreen = '/lawyerLoginScreen';
-  static const String userLoginScreen = '/userLoginScreen';
+  static const String loginScreen = '/loginScreen';
   static const String userSignUpScreen = '/userSignUpScreen';
   static const String lawyerSignUpScreenOne = '/lawyerSignUpScreenOne';
   static const String lawyerSignUpScreenTwo = '/lawyerSignUpScreenTwo';
-  static const String  otpScreen = '/otpScreen';
+  static const String otpScreen = '/otpScreen';
+  static const String mainScreen = '/mainScreen';
 
 
 
@@ -18,7 +18,6 @@ class Routes {
   static const String detailsDoctorScreen = '/detailsDoctorScreen';
   static const String bookAppointmentScreen = '/bookAppointmentScreen';
   static const String bookDetailsScreen = '/bookDetailsScreen';
-  static const String mainScreen = '/mainScreen';
   static const String myAppointmentScreen = '/myAppointmentScreen';
   static const String settingScreen = '/settingScreen';
   static const String questionScreen = '/questionScreen';

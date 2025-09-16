@@ -56,5 +56,14 @@
   "add": "أضف",
   "save": "حفظ",
   "cancel": "تراجع",
-  "character": " حرف"
+  "character": " حرف",
+  "home": "الرئيسية",
+  "myBooking": "حجوزاتي",
+  "profile": "حسابي",
+  "riyadh": "الرياض",
+  "ourServices": "خدماتنا",
+  "legalConsultations": "استشارات قانونية",
+  "guideToRegulationsAndRules": " دليل اللوائح والانظمة",
+  "guideToWritingAndOfficialAuthorities": " دليل كتابة العدل والجهات الرسمية",
+  "guideToLawFirms": " دليل مكاتب المحاماة"
 }

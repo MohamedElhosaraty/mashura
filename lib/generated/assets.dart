@@ -7,11 +7,22 @@ class Assets {
   static const String imagesArrow = 'assets/images/arrow.png';
   static const String imagesEdit = 'assets/images/edit.png';
   static const String imagesGroup = 'assets/images/Group.png';
+  static const String imagesHome = 'assets/images/home.png';
+  static const String imagesLegality = 'assets/images/legality.png';
+  static const String imagesLocation = 'assets/images/location.png';
   static const String imagesLogo = 'assets/images/logo.png';
+  static const String imagesMyBooking = 'assets/images/my_booking.png';
+  static const String imagesNotification = 'assets/images/notification.png';
   static const String imagesOnboarding = 'assets/images/onboarding.png';
+  static const String imagesProfile = 'assets/images/profile.png';
+  static const String imagesRegulations = 'assets/images/regulations.png';
   static const String imagesSaudiArabia = 'assets/images/saudiArabia.png';
   static const String imagesSplash = 'assets/images/splash.png';
+  static const String imagesWrite = 'assets/images/write.png';
   static const String langAr = 'assets/lang/ar.json';
   static const String langEn = 'assets/lang/en.json';
+  static const String svgHomeOutline = 'assets/svg/home_outline.svg';
+  static const String svgMyBookingOutline = 'assets/svg/my_booking_outline.svg';
+  static const String svgProfileOutline = 'assets/svg/profile_outline.svg';
 
 }

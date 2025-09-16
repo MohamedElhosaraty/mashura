@@ -56,6 +56,15 @@
   "add": "Add",
   "save": "Save",
   "cancel": "Cancel",
-  "character": "Character"
+  "character": "Character",
+  "home": "home",
+  "myBooking": "My Bookings",
+  "profile": "profile",
+  "riyadh": "Riyadh",
+  "ourServices": "Our Services",
+  "legalConsultations": "Legal consultations",
+  "guideToRegulationsAndRules": "Guide to Regulations and Rules",
+  "guideToWritingAndOfficialAuthorities": "Guide to Writing and Official Authorities",
+  "guideToLawFirms": "Guide to Law Firms"
 
 }
