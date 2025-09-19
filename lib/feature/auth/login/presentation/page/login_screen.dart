@@ -11,8 +11,8 @@ import '../../../../../core/widgets/custom_button.dart';
 import '../../../../../generated/assets.dart';
 import '../../../../../generated/language_key.dart';
 
-class UserLoginScreen extends StatelessWidget {
-  const UserLoginScreen({super.key});
+class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +61,9 @@ class UserLoginScreen extends StatelessWidget {
                 bgColor: AppColors.primaryColor,
                 yPadding: 18.h,
                 borderRadius: 13.r,
-                onPressed: () {},
+                onPressed: () {
+                  context.pushReplacementNamed(Routes.mainScreen);
+                },
                 child: Text(
                   tr(context, LanguageKey.login),
                   style: AppTextStyles.font18Regular(
@@ -98,7 +100,7 @@ class UserLoginScreen extends StatelessWidget {
                 children: [
                   InkWell(
                     onTap: () {
-                      context.pushReplacementNamed(Routes.lawyerLoginScreen);
+                      context.pushReplacementNamed(Routes.lawyerSignUpScreenOne);
                     },
                     child: Text(
                       tr(context, LanguageKey.registerAsLawyer),

@@ -56,6 +56,14 @@ class LanguageKey {
   static const String save = "save";
   static const String cancel = "cancel";
   static const String character = "character";
-
+  static const String home = "home";
+  static const String myBooking = "myBooking";
+  static const String profile = "profile";
+  static const String riyadh = "riyadh";
+  static const String ourServices = "ourServices";
+  static const String legalConsultations = "legalConsultations";
+  static const String guideToRegulationsAndRules = "guideToRegulationsAndRules";
+  static const String guideToWritingAndOfficialAuthorities = "guideToWritingAndOfficialAuthorities";
+  static const String guideToLawFirms = "guideToLawFirms";
 
 }
