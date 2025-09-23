@@ -65,5 +65,12 @@ class LanguageKey {
   static const String guideToRegulationsAndRules = "guideToRegulationsAndRules";
   static const String guideToWritingAndOfficialAuthorities = "guideToWritingAndOfficialAuthorities";
   static const String guideToLawFirms = "guideToLawFirms";
+  static const String requestTheServiceNow = "requestTheServiceNow";
+  static const String bookYourAppointmentInAdvance = "bookYourAppointmentInAdvance";
+  static const String seeAll = "seeAll";
+  static const String mostRated = "mostRated";
+  static const String mohamedElhosaraty = "mohamedElhosaraty";
+  static const String nearestToYou = "nearestToYou";
+  static const String notifications = "notifications";
 
 }

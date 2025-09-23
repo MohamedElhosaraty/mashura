@@ -5,12 +5,14 @@ class Assets {
   static const String fontsMadaniArabicSemiBold400 = 'assets/fonts/Madani-Arabic-SemiBold-400.ttf';
   static const String imagesAddImage = 'assets/images/add_image.png';
   static const String imagesArrow = 'assets/images/arrow.png';
+  static const String imagesCalendar = 'assets/images/calendar.png';
   static const String imagesEdit = 'assets/images/edit.png';
   static const String imagesGroup = 'assets/images/Group.png';
   static const String imagesHome = 'assets/images/home.png';
   static const String imagesLegality = 'assets/images/legality.png';
   static const String imagesLocation = 'assets/images/location.png';
   static const String imagesLogo = 'assets/images/logo.png';
+  static const String imagesMan = 'assets/images/man.png';
   static const String imagesMyBooking = 'assets/images/my_booking.png';
   static const String imagesNotification = 'assets/images/notification.png';
   static const String imagesOnboarding = 'assets/images/onboarding.png';

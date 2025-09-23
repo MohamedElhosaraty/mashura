@@ -3,6 +3,7 @@ import 'package:mashura/core/routing/routes.dart';
 import 'package:mashura/feature/auth/login/presentation/page/login_screen.dart';
 import 'package:mashura/feature/auth/sign_up/presentation/page/lawyer_sign_ups_screen_one.dart';
 import 'package:mashura/feature/auth/sign_up/presentation/page/user_sign_up_screen.dart';
+import 'package:mashura/feature/notification/presentation/page/notification_screen.dart';
 import 'package:mashura/feature/splash/splash_screen.dart';
 
 import '../../feature/auth/otp/presentation/page/otp_screen.dart';
@@ -40,6 +41,9 @@ class AppRouter {
 
         case Routes.mainScreen:
         return MaterialPageRoute(builder: (_) => const MainScreen());
+
+        case Routes.notificationScreen:
+        return MaterialPageRoute(builder: (_) => const NotificationScreen());
     }
     return null;
   }

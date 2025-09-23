@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mashura/core/helpers/extensions.dart';
+import 'package:mashura/core/routing/routes.dart';
 
 import '../../../../../core/localization/localization_methods.dart';
 import '../../../../../core/theming/app_colors.dart';
@@ -33,8 +35,13 @@ class CustomHomeAppBar extends StatelessWidget {
               color: AppColors.primaryColor,),
           ],
         ),
-        Image.asset(
-          Assets.imagesNotification,
+        InkWell(
+          onTap: (){
+            context.pushNamed(Routes.notificationScreen);
+          },
+          child: Image.asset(
+            Assets.imagesNotification,
+          ),
         ),
       ],
     );

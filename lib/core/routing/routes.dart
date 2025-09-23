@@ -8,6 +8,7 @@ class Routes {
   static const String lawyerSignUpScreenTwo = '/lawyerSignUpScreenTwo';
   static const String otpScreen = '/otpScreen';
   static const String mainScreen = '/mainScreen';
+  static const String notificationScreen = '/notificationScreen';
 
 
 

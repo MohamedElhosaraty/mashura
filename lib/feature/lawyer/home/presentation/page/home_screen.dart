@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mashura/feature/lawyer/home/presentation/widget/custom_home_app_bar.dart';
+import 'package:mashura/feature/lawyer/home/presentation/widget/custom_rate_item.dart';
+import 'package:mashura/feature/lawyer/home/presentation/widget/custom_row_see_all.dart';
 
 import '../../../../../core/localization/localization_methods.dart';
+import '../../../../../core/theming/app_colors.dart';
 import '../../../../../core/theming/app_text_styles.dart';
 import '../../../../../generated/assets.dart';
 import '../../../../../generated/language_key.dart';
@@ -48,9 +51,77 @@ class HomeScreen extends StatelessWidget {
                   imageString: Assets.imagesWrite,
                 ),
                 21.verticalSpace,
+                Container(
+                  padding: const EdgeInsets.only(right: 7,left: 15,bottom: 7,top: 7),
+                  decoration: BoxDecoration(
+                    color: AppColors.primaryColor,
+                    borderRadius: BorderRadius.circular(15.r),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Column(
+                        children: [
+                          Text(
+                            tr(context, LanguageKey.requestTheServiceNow),
+                            style: AppTextStyles.font18SemiBold(context).copyWith(
+                              color: AppColors.background,
+                            ),
+                          ),
+                          3.verticalSpace,
+                          Text(
+                            tr(context, LanguageKey.bookYourAppointmentInAdvance),
+                            style: AppTextStyles.font12Regular(context).copyWith(
+                              color: AppColors.background,
+                            ),
+                          ),
+                        ],
+                      ),
+                      6.horizontalSpace,
+                      Container(
+                        padding: const EdgeInsets.all(12.0),
+                        decoration: BoxDecoration(
+                          color: AppColors.background,
+                          borderRadius: BorderRadius.circular(10.r),
+                        ),
+                        child:Image.asset(
+                            Assets.imagesCalendar),
+                      ),
+                    ],
+                  ),
+                ),
+                24.verticalSpace,
+                CustomRowSeeAll(
+                    title: tr(context, LanguageKey.mostRated) ,
+                    onTap: (){}),
+                13.verticalSpace,
+                SizedBox(
+                  height: 180.h,
+                    child: ListView.builder(
+                        itemCount: 2,
+                        physics: const NeverScrollableScrollPhysics(),
+                        itemBuilder: (context, index) => CustomRateItem(
+                      name: tr(context, LanguageKey.mohamedElhosaraty),
+                    )),
+                  ),
+                28.verticalSpace,
+                CustomRowSeeAll(
+                    title: tr(context, LanguageKey.nearestToYou) ,
+                    onTap: (){}),
+                10.verticalSpace,
+                SizedBox(
+                  height: 200.h,
+                  child: ListView.builder(
+                      itemCount: 5,
+                      physics: const BouncingScrollPhysics(),
+                      itemBuilder: (context, index) => CustomRateItem(
+                        name: tr(context, LanguageKey.mohamedElhosaraty),
+                      )),
+                ),
               ],
             ),
           ),
-        ));
+        ),
+    );
   }
 }
