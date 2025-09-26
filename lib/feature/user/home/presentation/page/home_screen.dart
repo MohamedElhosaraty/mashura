@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mashura/feature/lawyer/home/presentation/widget/custom_home_app_bar.dart';
-import 'package:mashura/feature/lawyer/home/presentation/widget/custom_rate_item.dart';
-import 'package:mashura/feature/lawyer/home/presentation/widget/custom_row_see_all.dart';
-
+import 'package:mashura/core/helpers/extensions.dart';
 import '../../../../../core/localization/localization_methods.dart';
+import '../../../../../core/routing/routes.dart';
 import '../../../../../core/theming/app_colors.dart';
 import '../../../../../core/theming/app_text_styles.dart';
 import '../../../../../generated/assets.dart';
 import '../../../../../generated/language_key.dart';
+import '../widget/custom_home_app_bar.dart';
+import '../widget/custom_rate_item.dart';
+import '../widget/custom_row_see_all.dart';
 import '../widget/custom_services_item.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -32,21 +33,29 @@ class HomeScreen extends StatelessWidget {
                 ),
                 17.verticalSpace,
                 CustomServicesItem(
+                  onTap: (){},
                   title: tr(context, LanguageKey.legalConsultations),
                   imageString: Assets.imagesLegality,
                 ),
                 11.verticalSpace,
                 CustomServicesItem(
+                  onTap: (){},
                   title: tr(context, LanguageKey.guideToRegulationsAndRules),
                   imageString: Assets.imagesRegulations,
                 ),
                 11.verticalSpace,
                 CustomServicesItem(
+                  onTap: (){
+                    context.pushNamed(Routes.justiceWritingScreen);
+                  },
                   title: tr(context, LanguageKey.guideToWritingAndOfficialAuthorities),
                   imageString: Assets.imagesWrite,
                 ),
                 11.verticalSpace,
                 CustomServicesItem(
+                  onTap: (){
+                     context.pushNamed(Routes.comprehensionGuideScreen);
+                  },
                   title: tr(context, LanguageKey.guideToLawFirms),
                   imageString: Assets.imagesWrite,
                 ),

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mashura/feature/lawyer/home/presentation/page/home_screen.dart';
-import 'package:mashura/feature/lawyer/my_bookings/presentation/page/my_bookings_screen.dart';
-import 'package:mashura/feature/lawyer/profile/presentation/page/profile_screen.dart';
 import '../../../../../core/widgets/bottom_nav_bar.dart';
+import '../../../home/presentation/page/home_screen.dart';
+import '../../../my_bookings/presentation/page/my_bookings_screen.dart';
+import '../../../profile/presentation/page/profile_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});

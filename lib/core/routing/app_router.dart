@@ -5,12 +5,14 @@ import 'package:mashura/feature/auth/sign_up/presentation/page/lawyer_sign_ups_s
 import 'package:mashura/feature/auth/sign_up/presentation/page/user_sign_up_screen.dart';
 import 'package:mashura/feature/notification/presentation/page/notification_screen.dart';
 import 'package:mashura/feature/splash/splash_screen.dart';
+import 'package:mashura/feature/user/home/presentation/page/comprehensive_guide_screen.dart';
+import 'package:mashura/feature/user/home/presentation/page/justice_writing_screen.dart';
 
 import '../../feature/auth/otp/presentation/page/otp_screen.dart';
 import '../../feature/auth/sign_up/presentation/page/lawyer_sign_up_screen_two.dart';
 import '../../feature/change_language/change_language_screen.dart';
-import '../../feature/lawyer/main_screen/presentation/page/main_screen.dart';
 import '../../feature/onboarding/presentation/pages/onboarding_screen.dart';
+import '../../feature/user/main_screen/presentation/page/main_screen.dart';
 
 class AppRouter {
   static Route? generateRoute(RouteSettings settings) {
@@ -44,6 +46,13 @@ class AppRouter {
 
         case Routes.notificationScreen:
         return MaterialPageRoute(builder: (_) => const NotificationScreen());
+
+        case Routes.comprehensionGuideScreen:
+        return MaterialPageRoute(builder: (_) => const ComprehensiveGuideScreen());
+
+
+        case Routes.justiceWritingScreen:
+        return MaterialPageRoute(builder: (_) => const JusticeWritingScreen());
     }
     return null;
   }

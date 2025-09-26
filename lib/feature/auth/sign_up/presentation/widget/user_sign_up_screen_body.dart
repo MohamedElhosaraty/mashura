@@ -88,7 +88,8 @@ class _UserSignUpScreenBodyState extends State<UserSignUpScreenBody> {
                   color: AppColors.lightGrey,
                 ),
               ),
-            ),            75.verticalSpace,
+            ),
+            75.verticalSpace,
             CustomButton(
               bgColor: AppColors.primaryColor,
               yPadding: 18.h,

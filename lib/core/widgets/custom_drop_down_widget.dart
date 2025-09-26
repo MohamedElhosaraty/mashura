@@ -10,12 +10,16 @@ class CustomDropDownWidget extends StatefulWidget {
     required this.content,
     required this.child,
     required this.colorIcon,
+     this.bgColor,
+     this.textStyle,
   });
 
   final ValueChanged<String> onChanged;
   final List<String> content;
   final Widget child;
   final Color colorIcon;
+  final Color? bgColor;
+  final TextStyle? textStyle;
 
   @override
   State<CustomDropDownWidget> createState() => _CustomDropDownWidgetState();
@@ -31,18 +35,18 @@ class _CustomDropDownWidgetState extends State<CustomDropDownWidget> {
       value: selectedValue,
       decoration: InputDecoration(
         filled: true,
-        fillColor: Colors.white,
+        fillColor: widget.bgColor ?? Colors.white,
         contentPadding: const EdgeInsets.symmetric(horizontal: 6, vertical: 14),
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(6),
+          borderRadius: BorderRadius.circular(15),
           borderSide: BorderSide(color: AppColors.moreWhite, width: 1.5),
         ),
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(6),
+          borderRadius: BorderRadius.circular(15),
           borderSide: BorderSide(color: AppColors.moreWhite, width: 1.5),
         ),
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(6),
+          borderRadius: BorderRadius.circular(15),
           borderSide: BorderSide(color: AppColors.moreWhite, width: 1.5),
         ),
       ),
@@ -64,7 +68,8 @@ class _CustomDropDownWidgetState extends State<CustomDropDownWidget> {
           value: item,
           child: Text(
             item,
-            style: AppTextStyles.font16Regular(context).copyWith(color: AppColors.lightGrey),
+            style: widget.textStyle ?? AppTextStyles.font16Regular(context).copyWith(
+                color: AppColors.lightGrey),
           ),
         );
       }).toList(),

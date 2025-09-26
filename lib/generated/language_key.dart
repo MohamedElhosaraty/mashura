@@ -72,5 +72,8 @@ class LanguageKey {
   static const String mohamedElhosaraty = "mohamedElhosaraty";
   static const String nearestToYou = "nearestToYou";
   static const String notifications = "notifications";
+  static const String search = "search";
+  static const String futureCompany = "futureCompany";
+  static const String theSpecializationIsPlacedHere = "theSpecializationIsPlacedHere";
 
 }
