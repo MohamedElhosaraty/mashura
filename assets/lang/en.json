@@ -75,6 +75,23 @@
   "notifications": "Notifications",
   "search": "Search",
   "futureCompany": "Future Company",
-  "theSpecializationIsPlacedHere": "The specialization is placed here"
+  "theSpecializationIsPlacedHere": "The specialization is placed here",
+  "brief": "Brief",
+  "theVision": "The Vision",
+  "visionCompany": "Inspired by the vision of the Kingdom of Saudi Arabia 2030 towards excellence in all sectors, we at the 'Future Law Office' aspire to be leaders in providing legal services in the Kingdom, through our commitment to the highest standards of quality and professionalism, aiming to be the first choice for our clients in various legal matters and specialties.",
+  "message": "message",
+  "messageCompany": "We aim to provide comprehensive and integrated legal services that include legal consultations, litigation, and contract drafting, ensuring our clients' rights and achieving their interests, while adhering to standards of integrity and transparency.",
+  "quality": "Quality :",
+  "qualityCompany": "We continuously strive to improve the quality of our legal services by developing our team's skills and adopting the best legal practices, to ensure that we provide outstanding legal service that meets our clients' expectations.",
+  "branches": "branches",
+  "theKingdomOfSaudiArabia": "The Kingdom of Saudi Arabia",
+  "searchForLegislationOrRegulations": "Search for Legislation or Regulations",
+  "commercialLaw": "Commercial Law",
+  "commercialLawSystem": "Commercial Law System",
+  "employmentLaw": "Employment Law",
+  "cityLaw": "City Law",
+  "personalLaw": "Personal Law",
+  "trafficLaw": "Traffic Law",
+  "housingLaw": "Housing Law"
 
 }

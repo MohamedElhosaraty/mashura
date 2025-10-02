@@ -75,5 +75,22 @@ class LanguageKey {
   static const String search = "search";
   static const String futureCompany = "futureCompany";
   static const String theSpecializationIsPlacedHere = "theSpecializationIsPlacedHere";
+  static const String brief = "brief";
+  static const String theVision = "theVision";
+  static const String visionCompany = "visionCompany";
+  static const String message = "message";
+  static const String messageCompany = "messageCompany";
+  static const String quality = "quality";
+  static const String qualityCompany = "qualityCompany";
+  static const String branches = "branches";
+  static const String theKingdomOfSaudiArabia = "theKingdomOfSaudiArabia";
+  static const String searchForLegislationOrRegulations = "searchForLegislationOrRegulations";
+  static const String commercialLaw = "commercialLaw";
+  static const String commercialLawSystem = "commercialLawSystem";
+  static const String employmentLaw = "employmentLaw";
+  static const String cityLaw = "cityLaw";
+  static const String personalLaw = "personalLaw";
+  static const String trafficLaw = "trafficLaw";
+  static const String housingLaw = "housingLaw";
 
 }

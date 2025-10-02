@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../../generated/assets.dart';
 import '../theming/app_colors.dart';
 import '../theming/app_text_styles.dart';
 
@@ -29,47 +30,49 @@ class SearchField extends StatelessWidget {
       onChanged: onChanged,
       decoration: InputDecoration(
         hintText: hintText ?? "Search",
-        hintStyle: AppTextStyles.font22Regular(context).copyWith(
-          color: AppColors.lightGrey,
+        hintStyle: AppTextStyles.font14Regular(context).copyWith(
+          color: AppColors.grey400,
         ),
         fillColor: AppColors.neutral,
         filled: true,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14.0),
-          borderSide:  BorderSide(color: AppColors.grey600),
+          borderSide:  BorderSide(color: AppColors.grey300),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14.0),
-          borderSide:  BorderSide(color: AppColors.grey600),
+          borderSide:  BorderSide(color: AppColors.grey300),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14.0),
-          borderSide:  BorderSide(color: AppColors.grey600),
+          borderSide:  BorderSide(color: AppColors.grey300),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14.0),
-          borderSide:  BorderSide(color: AppColors.grey600),
+          borderSide:  BorderSide(color: AppColors.grey300),
         ),
         contentPadding:
             const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-        prefixIcon: prefixIcon ??
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: SvgPicture.asset(
-                'Assets.svgsSearchIcon,',
-                width: 24,
-                height: 24,
-              ),
-            ),
-        // suffixIcon: suffixIcon ??
+        // prefixIcon: prefixIcon ??
         //     Padding(
         //       padding: const EdgeInsets.all(16.0),
-        //       child: SvgPicture.asset(
-        //         'Assets.svgFilterIcon',
+        //       child: Image.asset(
+        //         Assets.imagesSearch,
         //         width: 24,
         //         height: 24,
+        //         color: AppColors.red,
         //       ),
         //     ),
+        suffixIcon: suffixIcon ??
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Image.asset(
+                Assets.imagesSearch,
+                width: 24,
+                height: 24,
+                color: AppColors.grey400,
+              ),
+            ),
       ),
     );
   }

@@ -12,6 +12,8 @@ import '../../feature/auth/otp/presentation/page/otp_screen.dart';
 import '../../feature/auth/sign_up/presentation/page/lawyer_sign_up_screen_two.dart';
 import '../../feature/change_language/change_language_screen.dart';
 import '../../feature/onboarding/presentation/pages/onboarding_screen.dart';
+import '../../feature/user/home/presentation/page/profile_company_screen.dart';
+import '../../feature/user/home/presentation/page/regulations_system_screen.dart';
 import '../../feature/user/main_screen/presentation/page/main_screen.dart';
 
 class AppRouter {
@@ -53,6 +55,12 @@ class AppRouter {
 
         case Routes.justiceWritingScreen:
         return MaterialPageRoute(builder: (_) => const JusticeWritingScreen());
+
+        case Routes.profileCompanyScreen:
+        return MaterialPageRoute(builder: (_) => const ProfileCompanyScreen());
+
+        case Routes.regulationsSystemScreen:
+        return MaterialPageRoute(builder: (_) => const RegulationsSystemScreen());
     }
     return null;
   }

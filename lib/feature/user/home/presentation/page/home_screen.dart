@@ -39,7 +39,9 @@ class HomeScreen extends StatelessWidget {
                 ),
                 11.verticalSpace,
                 CustomServicesItem(
-                  onTap: (){},
+                  onTap: (){
+                    context.pushNamed(Routes.regulationsSystemScreen);
+                  },
                   title: tr(context, LanguageKey.guideToRegulationsAndRules),
                   imageString: Assets.imagesRegulations,
                 ),
