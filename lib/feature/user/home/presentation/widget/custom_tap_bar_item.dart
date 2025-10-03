@@ -80,7 +80,7 @@ class _CustomTapBarItemState extends State<CustomTapBarItem> {
         10.horizontalSpace,
         Expanded(
           child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 25 ,vertical: 11),
+            padding: const EdgeInsets.symmetric(horizontal: 20 ,vertical: 11),
             decoration: BoxDecoration(
               color: AppColors.primaryColor,
               borderRadius: BorderRadius.circular(15.r),
@@ -90,11 +90,14 @@ class _CustomTapBarItemState extends State<CustomTapBarItem> {
                 Image.asset(
                   Assets.imagesSearch,
                 ),
-                8.horizontalSpace,
-                Text(
-                  tr(context, LanguageKey.search),
-                  style: AppTextStyles.font14SemiBold(context).copyWith(
-                    color: AppColors.background,
+                2.horizontalSpace,
+                Flexible(
+                  child: Text(
+                    tr(context, LanguageKey.search),
+                    overflow:  TextOverflow.ellipsis,
+                    style: AppTextStyles.font14Regular(context).copyWith(
+                      color: AppColors.background,
+                    ),
                   ),
                 ),
               ],

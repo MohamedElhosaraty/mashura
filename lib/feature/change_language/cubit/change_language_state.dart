@@ -1,10 +1,14 @@
-part of 'change_language_cubit.dart';
+import 'package:flutter/material.dart';
 
-sealed class ChangeLanguageState {}
-
-final class ChangeLanguageInitial extends ChangeLanguageState {}
-final class ChangeLanguageSuccess extends ChangeLanguageState {
+abstract class ChangeLanguageState {
   final Locale language;
+  const ChangeLanguageState({required this.language});
+}
 
-  ChangeLanguageSuccess({required this.language});
+class ChangeLanguageInitial extends ChangeLanguageState {
+  ChangeLanguageInitial() : super(language: const Locale('ar', 'EG'));
+}
+
+class ChangeLanguageSuccess extends ChangeLanguageState {
+  ChangeLanguageSuccess({required super.language});
 }

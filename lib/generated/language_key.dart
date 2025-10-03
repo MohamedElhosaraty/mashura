@@ -92,5 +92,6 @@ class LanguageKey {
   static const String personalLaw = "personalLaw";
   static const String trafficLaw = "trafficLaw";
   static const String housingLaw = "housingLaw";
+  static const String skipRegistration = "skipRegistration";
 
 }

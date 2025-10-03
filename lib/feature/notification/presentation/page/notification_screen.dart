@@ -20,20 +20,26 @@ class NotificationScreen extends StatelessWidget {
           child: Column(
             children: [
               20.verticalSpace,
-              CustomAppBar(
-                  title: tr(context, LanguageKey.notifications),
-                actions: Container(
-                  decoration: BoxDecoration(
-                    color: AppColors.background,
-                    borderRadius: BorderRadius.circular(8.0),
+              Row(
+                children: [
+                  Expanded(
+                    child: CustomAppBar(
+                        title: tr(context, LanguageKey.notifications),
+                    ),
                   ),
-                  child: IconButton(
+                  Container(
+                    decoration: BoxDecoration(
+                      color: AppColors.background,
+                      borderRadius: BorderRadius.circular(8.0),
+                    ),
+                    child: IconButton(
                         onPressed: (){},
                         icon: Icon( Icons.delete_outline,
-                        size: 25.sp,
-                        color: AppColors.red,)
+                          size: 25.sp,
+                          color: AppColors.red,)
                     ),
-                ),
+                  ),
+                ],
               ),
               28.verticalSpace,
               Expanded(

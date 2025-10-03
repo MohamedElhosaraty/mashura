@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import '../../../../../core/theming/app_colors.dart';
 import '../../../../../core/theming/app_text_styles.dart';
 import '../../../../../generated/assets.dart';
-import '../../../../../generated/language_key.dart';
-import '../../../../../core/localization/localization_methods.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomExpansionTile extends StatelessWidget {

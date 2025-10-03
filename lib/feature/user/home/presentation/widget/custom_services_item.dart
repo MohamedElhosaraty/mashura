@@ -15,8 +15,7 @@ class CustomServicesItem extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
-        height: 82.h,
-        padding: const EdgeInsets.only(right: 23),
+        padding: const EdgeInsets.symmetric(horizontal: 23,vertical: 23),
         decoration:  BoxDecoration(
           color: AppColors.neutral,
           borderRadius: BorderRadius.circular(20.r),
@@ -27,10 +26,12 @@ class CustomServicesItem extends StatelessWidget {
               imageString,
             ),
             14.horizontalSpace,
-            Text(
-              title,
-              style: AppTextStyles.font14Regular(context).copyWith(
-                color: AppColors.black,
+            Expanded(
+              child: Text(
+                title,
+                style: AppTextStyles.font14Regular(context).copyWith(
+                  color: AppColors.black,
+                ),
               ),
             ),
           ],

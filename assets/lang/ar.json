@@ -92,5 +92,6 @@
   "cityLaw": "القانون المدني",
   "personalLaw": "قانون الأحوال الشخصية",
   "trafficLaw": "قانون المرور",
-  "housingLaw": "قانون الإسكان"
+  "housingLaw": "قانون الإسكان",
+  "skipRegistration": "تخطي التسجيل"
 }

@@ -63,10 +63,12 @@ class CustomComprehensiveGuideItem extends StatelessWidget {
                   Assets.imagesMedal,
                 ),
                 10.horizontalSpace,
-                Text(
-                  tr(context, LanguageKey.theSpecializationIsPlacedHere),
-                  style: AppTextStyles.font12Bold(context).copyWith(
-                    color: AppColors.coffee3,
+                Expanded(
+                  child: Text(
+                    tr(context, LanguageKey.theSpecializationIsPlacedHere),
+                    style: AppTextStyles.font12Bold(context).copyWith(
+                      color: AppColors.coffee3,
+                    ),
                   ),
                 ),
               ],

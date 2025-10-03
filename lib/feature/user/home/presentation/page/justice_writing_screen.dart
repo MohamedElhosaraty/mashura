@@ -28,11 +28,11 @@ class JusticeWritingScreen extends StatelessWidget {
                 child:GridView.builder(
                   gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
-                    mainAxisExtent: 210.h,
+                    mainAxisExtent: 240.h,
                     mainAxisSpacing: 13.h,
                     crossAxisSpacing: 13.w,
                   ),
-                  itemCount: 30,
+                  itemCount: 4,
                   itemBuilder: (context, index) => const CustomComprehensiveGuideItem(),
                 ),
               ),

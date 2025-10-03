@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mashura/core/helpers/extensions.dart';
 import 'package:mashura/core/widgets/custom_phone_number_field.dart';
@@ -10,6 +11,8 @@ import '../../../../../core/theming/app_text_styles.dart';
 import '../../../../../core/widgets/custom_button.dart';
 import '../../../../../generated/assets.dart';
 import '../../../../../generated/language_key.dart';
+import '../../../../change_language/cubit/change_language_cubit.dart';
+import '../../../../change_language/cubit/change_language_state.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -31,11 +34,27 @@ class LoginScreen extends StatelessWidget {
                   Spacer(),
                   Icon(Icons.language_outlined, size: 17),
                   10.horizontalSpace,
-                  Text(
-                    "English",
-                    style: AppTextStyles.font12Regular(
-                      context,
-                    ).copyWith(color: AppColors.black),
+                  BlocBuilder<ChangeLanguageCubit, ChangeLanguageState>(
+                    builder: (context, state) {
+                      return InkWell(
+                        onTap: () {
+                          context.read<ChangeLanguageCubit>().changeLanguage(
+                                state.language == const Locale("en", "US")
+                                    ? const Locale("ar", "EG")
+                                    : const Locale("en", "US"),
+                          );
+                        },
+                        child: Text(
+                          state.language == const Locale("en", "US")
+                              ? "العربية"
+                              :
+                          "English",
+                          style: AppTextStyles.font12Regular(
+                            context,
+                          ).copyWith(color: AppColors.black,),
+                        ),
+                      );
+                    },
                   ),
 
                 ],
@@ -57,6 +76,21 @@ class LoginScreen extends StatelessWidget {
               10.verticalSpace,
               CustomPhoneNumberField(),
               Spacer(),
+              Align(
+                alignment: Alignment.center,
+                child: TextButton(
+                  onPressed: () {
+                    context.pushReplacementNamed(Routes.mainScreen);
+                  },
+                  child: Text(
+                  tr(context, LanguageKey.skipRegistration),
+                  style: AppTextStyles.font14Regular(
+                    context,
+                  ).copyWith(color: AppColors.grey400),
+                ),
+              ),
+              ),
+              27.verticalSpace,
               CustomButton(
                 bgColor: AppColors.primaryColor,
                 yPadding: 18.h,
@@ -86,11 +120,11 @@ class LoginScreen extends StatelessWidget {
                       context.pushReplacementNamed(Routes.userSignUpScreen);
                     },
                     child: Text(
-                    tr(context, LanguageKey.registerNow),
-                    style: AppTextStyles.font14Regular(
-                      context,
-                    ).copyWith(color: AppColors.coffee),
-                  ),
+                      tr(context, LanguageKey.registerNow),
+                      style: AppTextStyles.font14Regular(
+                        context,
+                      ).copyWith(color: AppColors.coffee),
+                    ),
                   ),
                 ],
               ),
@@ -100,7 +134,8 @@ class LoginScreen extends StatelessWidget {
                 children: [
                   InkWell(
                     onTap: () {
-                      context.pushReplacementNamed(Routes.lawyerSignUpScreenOne);
+                      context.pushReplacementNamed(
+                          Routes.lawyerSignUpScreenOne);
                     },
                     child: Text(
                       tr(context, LanguageKey.registerAsLawyer),

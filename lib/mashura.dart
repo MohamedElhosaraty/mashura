@@ -7,6 +7,7 @@ import 'core/localization/set_localization.dart';
 import 'core/routing/app_router.dart';
 import 'core/routing/routes.dart';
 import 'feature/change_language/cubit/change_language_cubit.dart';
+import 'feature/change_language/cubit/change_language_state.dart';
 
 class MashuraApp extends StatelessWidget {
   const MashuraApp({super.key});
@@ -17,20 +18,13 @@ class MashuraApp extends StatelessWidget {
       designSize: const Size(375, 812),
       minTextAdapt: true,
       splitScreenMode: true,
-
       child: BlocProvider(
         create: (context) => ChangeLanguageCubit(),
         child: BlocBuilder<ChangeLanguageCubit, ChangeLanguageState>(
           builder: (context, state) {
-            Locale appLocale = const Locale('ar', 'EG');
-
-            if (state is ChangeLanguageSuccess) {
-              appLocale = state.language;
-            }
             return MaterialApp(
               title: 'Mashura',
-              key: ValueKey(appLocale.languageCode),
-              locale: appLocale,
+              locale: state.language,
               supportedLocales: const [
                 Locale('en', 'US'),
                 Locale('ar', 'EG'),

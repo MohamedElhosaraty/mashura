@@ -116,7 +116,9 @@ class _UserSignUpScreenBodyState extends State<UserSignUpScreenBody> {
                   ).copyWith(color: AppColors.darkBlue),
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    context.pushReplacementNamed(Routes.loginScreen);
+                  },
                   child: Text(
                     tr(context, LanguageKey.log),
                     style: AppTextStyles.font14Regular(

@@ -5,6 +5,7 @@ class Assets {
   static const String fontsMadaniArabicSemiBold400 = 'assets/fonts/Madani-Arabic-SemiBold-400.ttf';
   static const String imagesAddImage = 'assets/images/add_image.png';
   static const String imagesArrow = 'assets/images/arrow.png';
+  static const String imagesArrowRight = 'assets/images/arrowRight.png';
   static const String imagesBagCon = 'assets/images/bag_con.png';
   static const String imagesCalendar = 'assets/images/calendar.png';
   static const String imagesComprehensiveGuide = 'assets/images/comprehensive_guide.png';
@@ -25,6 +26,8 @@ class Assets {
   static const String imagesSaudiArabia = 'assets/images/saudiArabia.png';
   static const String imagesSearch = 'assets/images/search.png';
   static const String imagesSplash = 'assets/images/splash.png';
+  static const String imagesSplashBG = 'assets/images/splashBG.png';
+  static const String imagesSplashLogo = 'assets/images/splashLogo.png';
   static const String imagesWrite = 'assets/images/write.png';
   static const String langAr = 'assets/lang/ar.json';
   static const String langEn = 'assets/lang/en.json';

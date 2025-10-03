@@ -20,117 +20,110 @@ class HomeScreen extends StatelessWidget {
     return SafeArea(
         child: Padding(
           padding: const EdgeInsets.only(right: 23.0,left: 19),
-          child: SingleChildScrollView(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                34.verticalSpace,
-                CustomHomeAppBar(),
-                48.verticalSpace,
-                Text(
-                  tr(context, LanguageKey.ourServices),
-                  style: AppTextStyles.font16Regular(context),
+          child: ListView(
+            children: [
+              34.verticalSpace,
+              CustomHomeAppBar(),
+              48.verticalSpace,
+              Text(
+                tr(context, LanguageKey.ourServices),
+                style: AppTextStyles.font16Regular(context),
+              ),
+              17.verticalSpace,
+              CustomServicesItem(
+                onTap: (){},
+                title: tr(context, LanguageKey.legalConsultations),
+                imageString: Assets.imagesLegality,
+              ),
+              11.verticalSpace,
+              CustomServicesItem(
+                onTap: (){
+                  context.pushNamed(Routes.regulationsSystemScreen);
+                },
+                title: tr(context, LanguageKey.guideToRegulationsAndRules),
+                imageString: Assets.imagesRegulations,
+              ),
+              11.verticalSpace,
+              CustomServicesItem(
+                onTap: (){
+                  context.pushNamed(Routes.justiceWritingScreen);
+                },
+                title: tr(context, LanguageKey.guideToWritingAndOfficialAuthorities),
+                imageString: Assets.imagesWrite,
+              ),
+              11.verticalSpace,
+              CustomServicesItem(
+                onTap: (){
+                   context.pushNamed(Routes.comprehensionGuideScreen);
+                },
+                title: tr(context, LanguageKey.guideToLawFirms),
+                imageString: Assets.imagesWrite,
+              ),
+              21.verticalSpace,
+              Container(
+                padding: const EdgeInsets.only(right: 7,left: 15,bottom: 7,top: 7),
+                decoration: BoxDecoration(
+                  color: AppColors.primaryColor,
+                  borderRadius: BorderRadius.circular(15.r),
                 ),
-                17.verticalSpace,
-                CustomServicesItem(
-                  onTap: (){},
-                  title: tr(context, LanguageKey.legalConsultations),
-                  imageString: Assets.imagesLegality,
-                ),
-                11.verticalSpace,
-                CustomServicesItem(
-                  onTap: (){
-                    context.pushNamed(Routes.regulationsSystemScreen);
-                  },
-                  title: tr(context, LanguageKey.guideToRegulationsAndRules),
-                  imageString: Assets.imagesRegulations,
-                ),
-                11.verticalSpace,
-                CustomServicesItem(
-                  onTap: (){
-                    context.pushNamed(Routes.justiceWritingScreen);
-                  },
-                  title: tr(context, LanguageKey.guideToWritingAndOfficialAuthorities),
-                  imageString: Assets.imagesWrite,
-                ),
-                11.verticalSpace,
-                CustomServicesItem(
-                  onTap: (){
-                     context.pushNamed(Routes.comprehensionGuideScreen);
-                  },
-                  title: tr(context, LanguageKey.guideToLawFirms),
-                  imageString: Assets.imagesWrite,
-                ),
-                21.verticalSpace,
-                Container(
-                  padding: const EdgeInsets.only(right: 7,left: 15,bottom: 7,top: 7),
-                  decoration: BoxDecoration(
-                    color: AppColors.primaryColor,
-                    borderRadius: BorderRadius.circular(15.r),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Column(
-                        children: [
-                          Text(
-                            tr(context, LanguageKey.requestTheServiceNow),
-                            style: AppTextStyles.font18SemiBold(context).copyWith(
-                              color: AppColors.background,
-                            ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      children: [
+                        Text(
+                          tr(context, LanguageKey.requestTheServiceNow),
+                          style: AppTextStyles.font18SemiBold(context).copyWith(
+                            color: AppColors.background,
                           ),
-                          3.verticalSpace,
-                          Text(
-                            tr(context, LanguageKey.bookYourAppointmentInAdvance),
-                            style: AppTextStyles.font12Regular(context).copyWith(
-                              color: AppColors.background,
-                            ),
-                          ),
-                        ],
-                      ),
-                      6.horizontalSpace,
-                      Container(
-                        padding: const EdgeInsets.all(12.0),
-                        decoration: BoxDecoration(
-                          color: AppColors.background,
-                          borderRadius: BorderRadius.circular(10.r),
                         ),
-                        child:Image.asset(
-                            Assets.imagesCalendar),
+                        3.verticalSpace,
+                        Text(
+                          tr(context, LanguageKey.bookYourAppointmentInAdvance),
+                          style: AppTextStyles.font12Regular(context).copyWith(
+                            color: AppColors.background,
+                          ),
+                        ),
+                      ],
+                    ),
+                    6.horizontalSpace,
+                    Container(
+                      padding: const EdgeInsets.all(12.0),
+                      decoration: BoxDecoration(
+                        color: AppColors.background,
+                        borderRadius: BorderRadius.circular(10.r),
                       ),
-                    ],
-                  ),
+                      child:Image.asset(
+                          Assets.imagesCalendar),
+                    ),
+                  ],
                 ),
-                24.verticalSpace,
-                CustomRowSeeAll(
-                    title: tr(context, LanguageKey.mostRated) ,
-                    onTap: (){}),
-                13.verticalSpace,
-                SizedBox(
-                  height: 180.h,
-                    child: ListView.builder(
-                        itemCount: 2,
-                        physics: const NeverScrollableScrollPhysics(),
-                        itemBuilder: (context, index) => CustomRateItem(
-                      name: tr(context, LanguageKey.mohamedElhosaraty),
-                    )),
-                  ),
-                28.verticalSpace,
-                CustomRowSeeAll(
-                    title: tr(context, LanguageKey.nearestToYou) ,
-                    onTap: (){}),
-                10.verticalSpace,
-                SizedBox(
-                  height: 200.h,
-                  child: ListView.builder(
-                      itemCount: 5,
-                      physics: const BouncingScrollPhysics(),
-                      itemBuilder: (context, index) => CustomRateItem(
-                        name: tr(context, LanguageKey.mohamedElhosaraty),
-                      )),
-                ),
-              ],
-            ),
+              ),
+              24.verticalSpace,
+              CustomRowSeeAll(
+                  title: tr(context, LanguageKey.mostRated) ,
+                  onTap: (){}),
+              13.verticalSpace,
+              ListView.builder(
+                  shrinkWrap: true,
+                  itemCount: 2,
+                  physics: const NeverScrollableScrollPhysics(),
+                  itemBuilder: (context, index) => CustomRateItem(
+                name: tr(context, LanguageKey.mohamedElhosaraty),
+              )),
+              28.verticalSpace,
+              CustomRowSeeAll(
+                  title: tr(context, LanguageKey.nearestToYou) ,
+                  onTap: (){}),
+              10.verticalSpace,
+              ListView.builder(
+                  shrinkWrap: true,
+                  itemCount: 2,
+                  physics: const NeverScrollableScrollPhysics(),
+                  itemBuilder: (context, index) => CustomRateItem(
+                    name: tr(context, LanguageKey.mohamedElhosaraty),
+                  )),
+            ],
           ),
         ),
     );
