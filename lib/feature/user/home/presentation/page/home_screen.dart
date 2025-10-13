@@ -31,7 +31,9 @@ class HomeScreen extends StatelessWidget {
               ),
               17.verticalSpace,
               CustomServicesItem(
-                onTap: (){},
+                onTap: (){
+                  context.pushNamed(Routes.legaConsultationsScreen);
+                },
                 title: tr(context, LanguageKey.legalConsultations),
                 imageString: Assets.imagesLegality,
               ),

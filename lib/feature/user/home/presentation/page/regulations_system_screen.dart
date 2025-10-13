@@ -7,7 +7,6 @@ import '../../../../../core/localization/localization_methods.dart';
 import '../../../../../core/theming/app_colors.dart';
 import '../../../../../core/theming/app_text_styles.dart';
 import '../../../../../core/widgets/custom_app_bar.dart';
-import '../../../../../generated/assets.dart';
 import '../../../../../generated/language_key.dart';
 
 class RegulationsSystemScreen extends StatelessWidget {

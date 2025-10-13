@@ -93,6 +93,11 @@
   "personalLaw": "Personal Law",
   "trafficLaw": "Traffic Law",
   "housingLaw": "Housing Law",
-  "skipRegistration": "Skip Registration"
+  "skipRegistration": "Skip Registration",
+  "commercialCompaniesLaw": "Commercial Companies Law",
+  "lastUpdate": "Last Update:",
+  "issueDate": "Issue Date:",
+  "materials": "Materials",
+  "attachments": "Attachments"
 
 }

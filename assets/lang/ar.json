@@ -93,5 +93,10 @@
   "personalLaw": "قانون الأحوال الشخصية",
   "trafficLaw": "قانون المرور",
   "housingLaw": "قانون الإسكان",
-  "skipRegistration": "تخطي التسجيل"
+  "skipRegistration": "تخطي التسجيل",
+  "commercialCompaniesLaw": "قانون شركات التجارة",
+  "lastUpdate": "آخر تحديث:",
+  "issueDate": "تاريخ الإصدار:",
+  "materials": "المواد",
+  "attachments": "المرفقات"
 }
