@@ -8,8 +8,8 @@ import '../../../../../core/widgets/custom_app_bar.dart';
 import '../../../../../core/widgets/search_field.dart';
 import '../../../../../generated/language_key.dart';
 
-class LegaConsultationsScreen extends StatelessWidget {
-  const LegaConsultationsScreen({super.key});
+class DetailsScreen extends StatelessWidget {
+  const DetailsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

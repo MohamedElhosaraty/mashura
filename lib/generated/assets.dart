@@ -10,6 +10,7 @@ class Assets {
   static const String imagesCalendar = 'assets/images/calendar.png';
   static const String imagesComprehensiveGuide = 'assets/images/comprehensive_guide.png';
   static const String imagesEdit = 'assets/images/edit.png';
+  static const String imagesFilterBy = 'assets/images/filterBy.png';
   static const String imagesGroup = 'assets/images/Group.png';
   static const String imagesHome = 'assets/images/home.png';
   static const String imagesLegality = 'assets/images/legality.png';
@@ -17,6 +18,7 @@ class Assets {
   static const String imagesLogo = 'assets/images/logo.png';
   static const String imagesMan = 'assets/images/man.png';
   static const String imagesMedal = 'assets/images/medal.png';
+  static const String imagesMoney = 'assets/images/money.png';
   static const String imagesMyBooking = 'assets/images/my_booking.png';
   static const String imagesNotification = 'assets/images/notification.png';
   static const String imagesOnboarding = 'assets/images/onboarding.png';

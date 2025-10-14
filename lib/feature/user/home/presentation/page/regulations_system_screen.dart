@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mashura/core/helpers/extensions.dart';
 import 'package:mashura/core/widgets/search_field.dart';
 import 'package:mashura/feature/user/home/presentation/widget/custom_expansion_tile.dart';
 
 import '../../../../../core/localization/localization_methods.dart';
+import '../../../../../core/routing/routes.dart';
 import '../../../../../core/theming/app_colors.dart';
 import '../../../../../core/theming/app_text_styles.dart';
 import '../../../../../core/widgets/custom_app_bar.dart';
@@ -45,19 +47,34 @@ class RegulationsSystemScreen extends StatelessWidget {
                           child: Divider(),
                         ),
                         12.verticalSpace,
-                        Text(
-                          tr(context, LanguageKey.commercialLawSystem),
-                          style: AppTextStyles.font16Regular(context),
+                        TextButton(
+                          onPressed: () {
+                            context.pushNamed(Routes.detailsScreen);
+                          },
+                          child: Text(
+                            tr(context, LanguageKey.commercialLawSystem),
+                            style: AppTextStyles.font16Regular(context),
+                          ),
                         ),
                         20.verticalSpace,
-                        Text(
-                          tr(context, LanguageKey.commercialLawSystem),
-                          style: AppTextStyles.font16Regular(context),
+                        TextButton(
+                          onPressed: () {
+                            context.pushNamed(Routes.detailsScreen);
+                          },
+                          child: Text(
+                            tr(context, LanguageKey.commercialLawSystem),
+                            style: AppTextStyles.font16Regular(context),
+                          ),
                         ),
                         20.verticalSpace,
-                        Text(
-                          tr(context, LanguageKey.commercialLawSystem),
-                          style: AppTextStyles.font16Regular(context),
+                        TextButton(
+                          onPressed: () {
+                            context.pushNamed(Routes.detailsScreen);
+                          },
+                          child: Text(
+                            tr(context, LanguageKey.commercialLawSystem),
+                            style: AppTextStyles.font16Regular(context),
+                          ),
                         ),
                         20.verticalSpace,
                       ],

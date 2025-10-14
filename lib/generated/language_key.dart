@@ -98,5 +98,6 @@ class LanguageKey {
   static const String issueDate = "issueDate";
   static const String materials = "materials";
   static const String attachments = "attachments";
+  static const String sortBy = "sortBy";
 
 }

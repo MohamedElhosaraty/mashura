@@ -13,6 +13,8 @@ class Routes {
   static const String justiceWritingScreen = '/justiceWritingScreen';
   static const String profileCompanyScreen = '/profileCompanyScreen';
   static const String regulationsSystemScreen = '/regulationsSystemScreen';
-  static const String legaConsultationsScreen = '/legaConsultationsScreen';
+  static const String detailsScreen = '/detailsScreen';
+  static const String legalConsultationsScreen = '/legalConsultationsScreen';
+  static const String section = '/section';
 
 }
